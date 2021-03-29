@@ -1,0 +1,56 @@
+
+Característica del juego
+
+El archivo de carga debe secuenciar cuatro enteros (tiene un archivo de ejemplo):
+
+posición 0 = bando
+
+posición 1 = personaje
+
+posición 2 = arma
+
+posición 3 = poder
+
+--------------------------------------------------
+
+Hay personajes rojos y azules.
+
+--------------------------------------------------
+
+El poder inicial de los personajes:
+
+Soldado = 30
+
+Caballero = 40
+
+Rey = 50
+
+--------------------------------------------------
+
+Las armas de los personajes:
+
+Soldado = cuchillo
+
+Caballero = mangual
+
+Rey = espada láser
+
+--------------------------------------------------
+
+No ganan poder ni lo encuentran en las celdas (me quedé sin tiempo), disponen del poder inicial que se va desgastando a medida que transcurre la partida.
+
+Tampoco cambian sus armas.
+
+El jugador puede optar por mover el personaje en forma secuencial o por salto.
+
+Al hacerlo de forma secuencial pierde un punto por movimiento.
+
+Al hacerlo por salto, pierde 5 puntos, aunque puede saltar a cualquier parte del tablero (para escapar o atacar).
+
+Para poder saltar, por lo tanto, debe contar con al menos 5 puntos de poder.
+
+El poder del ataque se calcula multiplicando el entero correspondiente al arma por el entero correspondiente al personaje (iba a ser variable, terminó siendo fijo).
+
+Cada ataque resta ese número al poder del atacado.
+
+El juego finaliza cuando el poder del Rey llega a cero.
